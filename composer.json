@@ -39,9 +39,9 @@
         "symfony/yaml": "*"
     },
     "require-dev": {
-
     },
     "flex-require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "*",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
@@ -71,13 +71,16 @@
     },
     "scripts": {
         "auto-scripts": [
-
         ],
         "post-install-cmd": [
             "@auto-scripts"
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "post-create-project-cmd": [
+            "php bin/console doctrine:schema:create",
+            "php bin/console doctrine:fixtures:load -n"
         ]
     },
     "conflict": {
