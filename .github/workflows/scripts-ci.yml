@@ -5,10 +5,12 @@ on:
     paths:
       - .github/workflows/scripts-ci.yml
       - 'assets/**/*.ts'
+      - .eslintrc.yaml
   pull_request:
     paths:
       - .github/workflows/scripts-ci.yml
       - 'assets/**/*.ts'
+      - .eslintrc.yaml
 
 jobs:
   scripts-ci:

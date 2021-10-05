@@ -5,10 +5,12 @@ on:
     paths:
       - .github/workflows/styles-ci.yml
       - 'assets/**/*.scss'
+      - .stylelintrc.yaml
   pull_request:
     paths:
       - .github/workflows/styles-ci.yml
       - 'assets/**/*.scss'
+      - .stylelintrc.yaml
 
 jobs:
   styles-ci:
