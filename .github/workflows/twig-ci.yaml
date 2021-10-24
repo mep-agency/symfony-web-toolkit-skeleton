@@ -3,12 +3,12 @@ name: Twig CI
 on:
   push:
     paths:
-      - .github/workflows/twig-ci.yml
+      - .github/workflows/twig-ci.yaml
       - 'templates/**'
       - composer.lock
   pull_request:
     paths:
-      - .github/workflows/twig-ci.yml
+      - .github/workflows/twig-ci.yaml
       - 'templates/**'
       - composer.lock
 
